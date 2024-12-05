@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Counter1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA
+INFO: [VRFC 10-2458] undeclared symbol w3, assumed default net type wire [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv:27]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/vga-core-main/vga_core.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/vga-core-main/video_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/tb_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

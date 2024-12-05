@@ -1,0 +1,15 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sim_1/new/tb_VGA.sv,1733385926,systemVerilog,,,,tb_VGA,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv,1733331276,systemVerilog,,/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv,,Controller,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv,1733386045,systemVerilog,,/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv,,Counter1,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Register.sv,1733332235,systemVerilog,,/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv,,Register,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv,1733401169,systemVerilog,,/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv,,Top,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv,1733401169,systemVerilog,,/home/it/Desktop/vga-core-main/vga_core.sv,,VGA,,,,,,,,
+/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/tb_top.sv,1733403965,systemVerilog,,,,tb_top,,,,,,,,
+/home/it/Desktop/vga-core-main/vga_controller.v,1733376470,verilog,,,,vga_controller,,,,,,,,
+/home/it/Desktop/vga-core-main/vga_core.sv,1733376470,systemVerilog,,/home/it/Desktop/vga-core-main/video_memory.sv,,vga_core,,,,,,,,
+/home/it/Desktop/vga-core-main/video_memory.sv,1733376470,systemVerilog,,/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/tb_top.sv,,video_memory,,,,,,,,

@@ -1,0 +1,438 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  5 15:25:25 2024
+# Process ID: 244095
+# Current directory: /home/it/Desktop/sv_projects/VGA/project_1/project_1.runs/synth_1
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/it/Desktop/sv_projects/VGA/project_1/project_1.runs/synth_1/Top.vds
+# Journal file: /home/it/Desktop/sv_projects/VGA/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 244115 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1777.828 ; gain = 155.719 ; free physical = 20248 ; free virtual = 33403
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv:3]
+WARNING: [Synth 8-87] always_comb on 'sc_reg' did not result in combinational logic [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (1#1) [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Counter1' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv:3]
+	Parameter bits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Counter1' (2#1) [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Counter1__parameterized0' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv:3]
+	Parameter bits bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Counter1__parameterized0' (2#1) [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Counter1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (3#1) [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/VGA.sv:4]
+WARNING: [Synth 8-689] width (4) of port connection 'color' does not match port width (3) of module 'VGA' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'vga_core' [/home/it/Desktop/vga-core-main/vga_core.sv:1]
+	Parameter MEM_INIT_FILE bound to: default.mem - type: string 
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [/home/it/Desktop/vga-core-main/vga_controller.v:3]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter HMAX bound to: 799 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+	Parameter VMAX bound to: 524 - type: integer 
+	Parameter X_SCALE bound to: 4 - type: integer 
+	Parameter Y_SCALE bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (4#1) [/home/it/Desktop/vga-core-main/vga_controller.v:3]
+WARNING: [Synth 8-689] width (8) of port connection 'x' does not match port width (10) of module 'vga_controller' [/home/it/Desktop/vga-core-main/vga_core.sv:27]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (10) of module 'vga_controller' [/home/it/Desktop/vga-core-main/vga_core.sv:28]
+WARNING: [Synth 8-7023] instance 'vga_timing' of module 'vga_controller' has 8 connections declared, but only 7 given [/home/it/Desktop/vga-core-main/vga_core.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'video_memory' [/home/it/Desktop/vga-core-main/video_memory.sv:1]
+	Parameter MEM_INIT_FILE bound to: default.mem - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'video_memory' (5#1) [/home/it/Desktop/vga-core-main/video_memory.sv:1]
+WARNING: [Synth 8-689] width (32) of port connection 'write_address' does not match port width (16) of module 'video_memory' [/home/it/Desktop/vga-core-main/vga_core.sv:39]
+WARNING: [Synth 8-689] width (32) of port connection 'read_address' does not match port width (16) of module 'video_memory' [/home/it/Desktop/vga-core-main/vga_core.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'vga_core' (6#1) [/home/it/Desktop/vga-core-main/vga_core.sv:1]
+WARNING: [Synth 8-689] width (4) of port connection 'color' does not match port width (3) of module 'vga_core' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (7#1) [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Top.sv:1]
+WARNING: [Synth 8-3331] design video_memory has unconnected port resetn
+WARNING: [Synth 8-3331] design video_memory has unconnected port write_address[15]
+WARNING: [Synth 8-3331] design video_memory has unconnected port read_address[15]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[15]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1832.578 ; gain = 210.469 ; free physical = 20189 ; free virtual = 33344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1838.516 ; gain = 216.406 ; free physical = 20189 ; free virtual = 33344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1838.516 ; gain = 216.406 ; free physical = 20189 ; free virtual = 33344
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/it/Desktop/Tasks.srcs/constrs_1/imports/project_subdirectory/pin-assignment.xdc]
+Finished Parsing XDC File [/home/it/Desktop/Tasks.srcs/constrs_1/imports/project_subdirectory/pin-assignment.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/it/Desktop/Tasks.srcs/constrs_1/imports/project_subdirectory/pin-assignment.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.203 ; gain = 0.000 ; free physical = 20194 ; free virtual = 33349
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2001.203 ; gain = 0.000 ; free physical = 20194 ; free virtual = 33349
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20202 ; free virtual = 33357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20202 ; free virtual = 33357
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20202 ; free virtual = 33357
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                   BLACK |                               01 |                               01
+                   COLOR |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Controller'
+WARNING: [Synth 8-327] inferring latch for variable 'sc_reg' [/home/it/Desktop/sv_projects/VGA/project_1/project_1.srcs/sources_1/new/Controller.sv:40]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20209 ; free virtual = 33365
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module Counter1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Counter1__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Top has unconnected port SW[15]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design Top has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20225 ; free virtual = 33383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|Top         | vgacore/video_mem/ram_reg | Implied   | 32 K x 3             | RAM64M x 300   | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20156 ; free virtual = 33314
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20140 ; free virtual = 33298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+---------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object                | Inference | Size (Depth x Width) | Primitives     | 
++------------+---------------------------+-----------+----------------------+----------------+
+|Top         | vgacore/video_mem/ram_reg | Implied   | 32 K x 3             | RAM64M x 300   | 
++------------+---------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20144 ; free virtual = 33302
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     6|
+|4     |LUT2   |    87|
+|5     |LUT3   |    33|
+|6     |LUT4   |    38|
+|7     |LUT5   |    32|
+|8     |LUT6   |   566|
+|9     |MUXF7  |   117|
+|10    |MUXF8  |    48|
+|11    |RAM64M |   300|
+|12    |FDCE   |    81|
+|13    |LD     |     1|
+|14    |IBUF   |     3|
+|15    |OBUF   |    14|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+-------------------------+------+
+|      |Instance       |Module                   |Cells |
++------+---------------+-------------------------+------+
+|1     |top            |                         |  1341|
+|2     |  v1           |VGA                      |   405|
+|3     |    c1         |Counter1                 |    20|
+|4     |    c2         |Counter1__parameterized0 |   368|
+|5     |    cc         |Controller               |    17|
+|6     |  vgacore      |vga_core                 |   916|
+|7     |    vga_timing |vga_controller           |   148|
+|8     |    video_mem  |video_memory             |   737|
++------+---------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2001.203 ; gain = 216.406 ; free physical = 20145 ; free virtual = 33302
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2001.203 ; gain = 379.094 ; free physical = 20145 ; free virtual = 33302
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 478 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.109 ; gain = 0.000 ; free physical = 20149 ; free virtual = 33307
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 301 instances were transformed.
+  LD => LDCE: 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 300 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2012.109 ; gain = 629.914 ; free physical = 20175 ; free virtual = 33333
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.109 ; gain = 0.000 ; free physical = 20175 ; free virtual = 33333
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/it/Desktop/sv_projects/VGA/project_1/project_1.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 15:25:40 2024...
